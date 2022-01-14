@@ -136,3 +136,4 @@ React lifecycle methods can be used inside class components (for example, compon
     a. arrange -> render the documents/components
     b. act -> targeting the testing fields
     c. assert -> expecting the testing fields to execute what is expected
+    ...added...
