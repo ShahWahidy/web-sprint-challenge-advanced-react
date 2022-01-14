@@ -9,7 +9,7 @@ const initialValue = {
     zip: "",
   };
 
-const useForm = (initialValue) => {
+const useForm = () => {
     const [showSuccessMessage, setShowSuccessMessage] = useState(false);
     const [values, setValues] = useState(initialValue);
   
@@ -21,6 +21,8 @@ const useForm = (initialValue) => {
       e.preventDefault();
       setShowSuccessMessage(true);
     };
+
+    return [values, showSuccessMessage, handleChanges, handleSubmit]
   }
 
 export default useForm;
